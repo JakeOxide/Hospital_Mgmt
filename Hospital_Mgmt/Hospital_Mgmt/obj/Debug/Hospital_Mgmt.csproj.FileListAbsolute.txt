@@ -1,0 +1,13 @@
+C:\Users\Jake\Documents\GitHub\Hospital_Mgmt\Hospital_Mgmt\Hospital_Mgmt\obj\Debug\Hospital_Mgmt.csproj.AssemblyReference.cache
+C:\Users\Jake\Documents\GitHub\Hospital_Mgmt\Hospital_Mgmt\Hospital_Mgmt\obj\Debug\Hospital_Mgmt.csproj.SuggestedBindingRedirects.cache
+C:\Users\Jake\Documents\GitHub\Hospital_Mgmt\Hospital_Mgmt\Hospital_Mgmt\obj\Debug\Hospital_Mgmt.Properties.Resources.resources
+C:\Users\Jake\Documents\GitHub\Hospital_Mgmt\Hospital_Mgmt\Hospital_Mgmt\obj\Debug\Hospital_Mgmt.csproj.GenerateResource.cache
+C:\Users\Jake\Documents\GitHub\Hospital_Mgmt\Hospital_Mgmt\Hospital_Mgmt\obj\Debug\Hospital_Mgmt.csproj.CoreCompileInputs.cache
+C:\Users\Jake\Documents\GitHub\Hospital_Mgmt\Hospital_Mgmt\Hospital_Mgmt\bin\Debug\Hospital_Mgmt.exe.config
+C:\Users\Jake\Documents\GitHub\Hospital_Mgmt\Hospital_Mgmt\Hospital_Mgmt\bin\Debug\Hospital_Mgmt.exe
+C:\Users\Jake\Documents\GitHub\Hospital_Mgmt\Hospital_Mgmt\Hospital_Mgmt\bin\Debug\Hospital_Mgmt.pdb
+C:\Users\Jake\Documents\GitHub\Hospital_Mgmt\Hospital_Mgmt\Hospital_Mgmt\obj\Debug\Hospital_Mgmt.exe
+C:\Users\Jake\Documents\GitHub\Hospital_Mgmt\Hospital_Mgmt\Hospital_Mgmt\obj\Debug\Hospital_Mgmt.pdb
+C:\Users\Jake\Documents\GitHub\Hospital_Mgmt\Hospital_Mgmt\Hospital_Mgmt\obj\Debug\Hospital_Mgmt.AddEmployee.resources
+C:\Users\Jake\Documents\GitHub\Hospital_Mgmt\Hospital_Mgmt\Hospital_Mgmt\obj\Debug\Hospital_Mgmt.AdminMDI.resources
+C:\Users\Jake\Documents\GitHub\Hospital_Mgmt\Hospital_Mgmt\Hospital_Mgmt\obj\Debug\Hospital_Mgmt.Login.resources
