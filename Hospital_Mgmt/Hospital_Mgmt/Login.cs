@@ -93,7 +93,7 @@ namespace Hospital_Mgmt
                 {
                     if (txt_Password.Text.Equals("doc"))
                     {
-                        //docForm = new DocMDI(txt_UserID.Text, this);
+                        docForm = new DocMDI(txt_UserID.Text, this);
                         rbtn_Admin.Checked = false;
                         rbtn_Doctor.Checked = false;
                         rbtn_Nurse.Checked = false;
