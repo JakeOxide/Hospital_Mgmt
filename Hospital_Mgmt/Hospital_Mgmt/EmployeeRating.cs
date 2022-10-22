@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Hospital_Mgmt
 {
-    public partial class AddEmployee : Form
+    public partial class EmployeeRating : Form
     {
-        public AddEmployee()
+        public EmployeeRating()
         {
             InitializeComponent();
-        }
-
-        private void panel_parent_Paint(object sender, PaintEventArgs e)
-        {
-            
         }
     }
 }

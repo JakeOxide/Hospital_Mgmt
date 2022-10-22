@@ -45,6 +45,21 @@
             this.accountToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.loggedInAsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.adminToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.doctorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.nurseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.doctorToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.nurseToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.nurseToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.adminToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.doctorToolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
+            this.nurseToolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
+            this.adminToolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
+            this.doctorToolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
+            this.nurseToolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
+            this.adminsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.doctorsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.nursesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -76,6 +91,10 @@
             // 
             // addEmployeeToolStripMenuItem
             // 
+            this.addEmployeeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.adminToolStripMenuItem,
+            this.doctorToolStripMenuItem,
+            this.nurseToolStripMenuItem});
             this.addEmployeeToolStripMenuItem.Name = "addEmployeeToolStripMenuItem";
             this.addEmployeeToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
             this.addEmployeeToolStripMenuItem.Text = "Add Employee";
@@ -83,6 +102,10 @@
             // 
             // editEmployeeInfoToolStripMenuItem
             // 
+            this.editEmployeeInfoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.doctorToolStripMenuItem1,
+            this.nurseToolStripMenuItem1,
+            this.nurseToolStripMenuItem2});
             this.editEmployeeInfoToolStripMenuItem.Name = "editEmployeeInfoToolStripMenuItem";
             this.editEmployeeInfoToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
             this.editEmployeeInfoToolStripMenuItem.Text = "Edit Employee Info";
@@ -110,12 +133,20 @@
             // 
             // updateRatingRuleToolStripMenuItem
             // 
+            this.updateRatingRuleToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.adminToolStripMenuItem3,
+            this.doctorToolStripMenuItem4,
+            this.nurseToolStripMenuItem5});
             this.updateRatingRuleToolStripMenuItem.Name = "updateRatingRuleToolStripMenuItem";
             this.updateRatingRuleToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
             this.updateRatingRuleToolStripMenuItem.Text = "Update Employee Rating";
             // 
             // updateSalaryRuleToolStripMenuItem
             // 
+            this.updateSalaryRuleToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.adminToolStripMenuItem4,
+            this.doctorToolStripMenuItem5,
+            this.nurseToolStripMenuItem6});
             this.updateSalaryRuleToolStripMenuItem.Name = "updateSalaryRuleToolStripMenuItem";
             this.updateSalaryRuleToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
             this.updateSalaryRuleToolStripMenuItem.Text = "Update Employee Salary";
@@ -132,14 +163,18 @@
             // 
             // employeeStatisticsToolStripMenuItem
             // 
+            this.employeeStatisticsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.adminsToolStripMenuItem,
+            this.doctorsToolStripMenuItem,
+            this.nursesToolStripMenuItem});
             this.employeeStatisticsToolStripMenuItem.Name = "employeeStatisticsToolStripMenuItem";
-            this.employeeStatisticsToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
+            this.employeeStatisticsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.employeeStatisticsToolStripMenuItem.Text = "Employee Statistics";
             // 
             // patientStatisticsToolStripMenuItem
             // 
             this.patientStatisticsToolStripMenuItem.Name = "patientStatisticsToolStripMenuItem";
-            this.patientStatisticsToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
+            this.patientStatisticsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.patientStatisticsToolStripMenuItem.Text = "Patient Statistics";
             // 
             // viewToolStripMenuItem
@@ -147,13 +182,13 @@
             this.viewToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.employeeCardToolStripMenuItem});
             this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
-            this.viewToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
+            this.viewToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.viewToolStripMenuItem.Text = "View";
             // 
             // employeeCardToolStripMenuItem
             // 
             this.employeeCardToolStripMenuItem.Name = "employeeCardToolStripMenuItem";
-            this.employeeCardToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
+            this.employeeCardToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.employeeCardToolStripMenuItem.Text = "Employee Card";
             // 
             // accountToolStripMenuItem
@@ -168,15 +203,105 @@
             // logOutToolStripMenuItem
             // 
             this.logOutToolStripMenuItem.Name = "logOutToolStripMenuItem";
-            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
+            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.logOutToolStripMenuItem.Text = "Log out";
             this.logOutToolStripMenuItem.Click += new System.EventHandler(this.logOutToolStripMenuItem_Click);
             // 
             // loggedInAsToolStripMenuItem
             // 
             this.loggedInAsToolStripMenuItem.Name = "loggedInAsToolStripMenuItem";
-            this.loggedInAsToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
+            this.loggedInAsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.loggedInAsToolStripMenuItem.Text = "Logged in as";
+            // 
+            // adminToolStripMenuItem
+            // 
+            this.adminToolStripMenuItem.Name = "adminToolStripMenuItem";
+            this.adminToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.adminToolStripMenuItem.Text = "Admin";
+            // 
+            // doctorToolStripMenuItem
+            // 
+            this.doctorToolStripMenuItem.Name = "doctorToolStripMenuItem";
+            this.doctorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.doctorToolStripMenuItem.Text = "Doctor";
+            // 
+            // nurseToolStripMenuItem
+            // 
+            this.nurseToolStripMenuItem.Name = "nurseToolStripMenuItem";
+            this.nurseToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.nurseToolStripMenuItem.Text = "Nurse";
+            // 
+            // doctorToolStripMenuItem1
+            // 
+            this.doctorToolStripMenuItem1.Name = "doctorToolStripMenuItem1";
+            this.doctorToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.doctorToolStripMenuItem1.Text = "Admin";
+            // 
+            // nurseToolStripMenuItem1
+            // 
+            this.nurseToolStripMenuItem1.Name = "nurseToolStripMenuItem1";
+            this.nurseToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.nurseToolStripMenuItem1.Text = "Doctor";
+            // 
+            // nurseToolStripMenuItem2
+            // 
+            this.nurseToolStripMenuItem2.Name = "nurseToolStripMenuItem2";
+            this.nurseToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.nurseToolStripMenuItem2.Text = "Nurse";
+            // 
+            // adminToolStripMenuItem3
+            // 
+            this.adminToolStripMenuItem3.Name = "adminToolStripMenuItem3";
+            this.adminToolStripMenuItem3.Size = new System.Drawing.Size(180, 22);
+            this.adminToolStripMenuItem3.Text = "Admin";
+            // 
+            // doctorToolStripMenuItem4
+            // 
+            this.doctorToolStripMenuItem4.Name = "doctorToolStripMenuItem4";
+            this.doctorToolStripMenuItem4.Size = new System.Drawing.Size(180, 22);
+            this.doctorToolStripMenuItem4.Text = "Doctor";
+            // 
+            // nurseToolStripMenuItem5
+            // 
+            this.nurseToolStripMenuItem5.Name = "nurseToolStripMenuItem5";
+            this.nurseToolStripMenuItem5.Size = new System.Drawing.Size(180, 22);
+            this.nurseToolStripMenuItem5.Text = "Nurse";
+            // 
+            // adminToolStripMenuItem4
+            // 
+            this.adminToolStripMenuItem4.Name = "adminToolStripMenuItem4";
+            this.adminToolStripMenuItem4.Size = new System.Drawing.Size(180, 22);
+            this.adminToolStripMenuItem4.Text = "Admin";
+            // 
+            // doctorToolStripMenuItem5
+            // 
+            this.doctorToolStripMenuItem5.Name = "doctorToolStripMenuItem5";
+            this.doctorToolStripMenuItem5.Size = new System.Drawing.Size(180, 22);
+            this.doctorToolStripMenuItem5.Text = "Doctor";
+            // 
+            // nurseToolStripMenuItem6
+            // 
+            this.nurseToolStripMenuItem6.Name = "nurseToolStripMenuItem6";
+            this.nurseToolStripMenuItem6.Size = new System.Drawing.Size(180, 22);
+            this.nurseToolStripMenuItem6.Text = "Nurse";
+            // 
+            // adminsToolStripMenuItem
+            // 
+            this.adminsToolStripMenuItem.Name = "adminsToolStripMenuItem";
+            this.adminsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.adminsToolStripMenuItem.Text = "Admins";
+            // 
+            // doctorsToolStripMenuItem
+            // 
+            this.doctorsToolStripMenuItem.Name = "doctorsToolStripMenuItem";
+            this.doctorsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.doctorsToolStripMenuItem.Text = "Doctors";
+            // 
+            // nursesToolStripMenuItem
+            // 
+            this.nursesToolStripMenuItem.Name = "nursesToolStripMenuItem";
+            this.nursesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.nursesToolStripMenuItem.Text = "Nurses";
             // 
             // AdminMDI
             // 
@@ -217,5 +342,20 @@
         private System.Windows.Forms.ToolStripMenuItem accountToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem logOutToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem loggedInAsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem adminToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem doctorToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem nurseToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem doctorToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem nurseToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem nurseToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem adminToolStripMenuItem3;
+        private System.Windows.Forms.ToolStripMenuItem doctorToolStripMenuItem4;
+        private System.Windows.Forms.ToolStripMenuItem nurseToolStripMenuItem5;
+        private System.Windows.Forms.ToolStripMenuItem adminToolStripMenuItem4;
+        private System.Windows.Forms.ToolStripMenuItem doctorToolStripMenuItem5;
+        private System.Windows.Forms.ToolStripMenuItem nurseToolStripMenuItem6;
+        private System.Windows.Forms.ToolStripMenuItem adminsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem doctorsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem nursesToolStripMenuItem;
     }
 }

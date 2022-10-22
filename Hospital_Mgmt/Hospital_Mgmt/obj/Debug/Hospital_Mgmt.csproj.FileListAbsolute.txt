@@ -28,3 +28,15 @@ C:\Users\elias\OneDrive\Documents\GitHub\Hospital_Mgmt\Hospital_Mgmt\Hospital_Mg
 C:\Users\elias\OneDrive\Documents\GitHub\Hospital_Mgmt\Hospital_Mgmt\Hospital_Mgmt\bin\Debug\Hospital_Mgmt.exe.config
 C:\Users\elias\OneDrive\Documents\GitHub\Hospital_Mgmt\Hospital_Mgmt\Hospital_Mgmt\bin\Debug\Hospital_Mgmt.exe
 C:\Users\elias\OneDrive\Documents\GitHub\Hospital_Mgmt\Hospital_Mgmt\Hospital_Mgmt\bin\Debug\Hospital_Mgmt.pdb
+C:\Users\Jake\Documents\GitHub\Hospital_Mgmt\Hospital_Mgmt\Hospital_Mgmt\obj\Debug\Hospital_Mgmt.add_patient.resources
+C:\Users\Jake\Documents\GitHub\Hospital_Mgmt\Hospital_Mgmt\Hospital_Mgmt\obj\Debug\Hospital_Mgmt.DocMDI.resources
+C:\Users\Jake\Documents\GitHub\Hospital_Mgmt\Hospital_Mgmt\Hospital_Mgmt\obj\Debug\Hospital_Mgmt.EditEmployee.resources
+C:\Users\Jake\Documents\GitHub\Hospital_Mgmt\Hospital_Mgmt\Hospital_Mgmt\obj\Debug\Hospital_Mgmt.edit_patient_info.resources
+C:\Users\Jake\Documents\GitHub\Hospital_Mgmt\Hospital_Mgmt\Hospital_Mgmt\obj\Debug\Hospital_Mgmt.EmployeeCard.resources
+C:\Users\Jake\Documents\GitHub\Hospital_Mgmt\Hospital_Mgmt\Hospital_Mgmt\obj\Debug\Hospital_Mgmt.SearchEmployee.resources
+C:\Users\Jake\Documents\GitHub\Hospital_Mgmt\Hospital_Mgmt\Hospital_Mgmt\obj\Debug\Hospital_Mgmt.view_patient_info.resources
+C:\Users\Jake\Documents\GitHub\Hospital_Mgmt\Hospital_Mgmt\Hospital_Mgmt\obj\Debug\Hospital_Mgmt.DeleteEmployee.resources
+C:\Users\Jake\Documents\GitHub\Hospital_Mgmt\Hospital_Mgmt\Hospital_Mgmt\obj\Debug\Hospital_Mgmt.EmployeeLeaveRecord.resources
+C:\Users\Jake\Documents\GitHub\Hospital_Mgmt\Hospital_Mgmt\Hospital_Mgmt\obj\Debug\Hospital_Mgmt.EmployeeRating.resources
+C:\Users\Jake\Documents\GitHub\Hospital_Mgmt\Hospital_Mgmt\Hospital_Mgmt\obj\Debug\Hospital_Mgmt.StatReport.resources
+C:\Users\Jake\Documents\GitHub\Hospital_Mgmt\Hospital_Mgmt\Hospital_Mgmt\obj\Debug\Hospital_Mgmt.PatientStatus.resources
