@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel_parent = new System.Windows.Forms.Panel();
+            this.patientStatus1 = new Hospital_Mgmt.PatientStatus();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -50,7 +51,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
-            this.patientStatus1 = new Hospital_Mgmt.PatientStatus();
             this.panel_parent.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -69,6 +69,16 @@
             this.panel_parent.Size = new System.Drawing.Size(825, 519);
             this.panel_parent.TabIndex = 0;
             this.panel_parent.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_parent_Paint);
+            // 
+            // patientStatus1
+            // 
+            this.patientStatus1.Exp_Age = 20;
+            this.patientStatus1.Exp_ID = 56548;
+            this.patientStatus1.Exp_Name = "Patient One";
+            this.patientStatus1.Location = new System.Drawing.Point(450, 226);
+            this.patientStatus1.Name = "patientStatus1";
+            this.patientStatus1.Size = new System.Drawing.Size(240, 194);
+            this.patientStatus1.TabIndex = 25;
             // 
             // button3
             // 
@@ -244,7 +254,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.76624F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 32.90042F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(391, 124);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(391, 166);
             this.tableLayoutPanel1.TabIndex = 21;
             // 
             // label1
@@ -252,7 +262,7 @@
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(26, 8);
+            this.label1.Location = new System.Drawing.Point(26, 15);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(80, 25);
             this.label1.TabIndex = 0;
@@ -262,7 +272,7 @@
             // 
             this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(136, 3);
+            this.textBox1.Location = new System.Drawing.Point(136, 8);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(252, 39);
             this.textBox1.TabIndex = 10;
@@ -272,7 +282,7 @@
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(22, 90);
+            this.label2.Location = new System.Drawing.Point(22, 126);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(89, 25);
             this.label2.TabIndex = 1;
@@ -283,9 +293,9 @@
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(24, 41);
+            this.label3.Location = new System.Drawing.Point(24, 58);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(85, 41);
+            this.label3.Size = new System.Drawing.Size(85, 50);
             this.label3.TabIndex = 2;
             this.label3.Text = "Starting Salary";
             // 
@@ -293,7 +303,7 @@
             // 
             this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox2.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(136, 85);
+            this.textBox2.Location = new System.Drawing.Point(136, 119);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(252, 39);
             this.textBox2.TabIndex = 11;
@@ -302,20 +312,10 @@
             // 
             this.textBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox4.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(136, 44);
+            this.textBox4.Location = new System.Drawing.Point(136, 63);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(252, 39);
             this.textBox4.TabIndex = 13;
-            // 
-            // patientStatus1
-            // 
-            this.patientStatus1.Exp_Age = 20;
-            this.patientStatus1.Exp_ID = 56548;
-            this.patientStatus1.Exp_Name = "Patient One";
-            this.patientStatus1.Location = new System.Drawing.Point(440, 178);
-            this.patientStatus1.Name = "patientStatus1";
-            this.patientStatus1.Size = new System.Drawing.Size(240, 194);
-            this.patientStatus1.TabIndex = 25;
             // 
             // AddEmployee
             // 
