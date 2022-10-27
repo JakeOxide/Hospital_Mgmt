@@ -119,7 +119,7 @@ namespace Hospital_Mgmt
                 {
                     if (txt_Password.Text.Equals("nurse"))
                     {
-                        //nurseForm = new NurseMDI(txt_UserID.Text, this);
+                        nurseForm = new NurseMDI(txt_UserID.Text, this);
                         rbtn_Admin.Checked = false;
                         rbtn_Doctor.Checked = false;
                         rbtn_Nurse.Checked = false;

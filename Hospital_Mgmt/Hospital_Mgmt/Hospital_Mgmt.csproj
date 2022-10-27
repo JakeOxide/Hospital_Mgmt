@@ -64,6 +64,12 @@
     <Compile Include="AdminMDI.designer.cs">
       <DependentUpon>AdminMDI.cs</DependentUpon>
     </Compile>
+    <Compile Include="CheckStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckStatus.Designer.cs">
+      <DependentUpon>CheckStatus.cs</DependentUpon>
+    </Compile>
     <Compile Include="DeleteEmployee.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -106,11 +112,29 @@
     <Compile Include="EmployeeRating.Designer.cs">
       <DependentUpon>EmployeeRating.cs</DependentUpon>
     </Compile>
+    <Compile Include="GenerateMedicalReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenerateMedicalReport.Designer.cs">
+      <DependentUpon>GenerateMedicalReport.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Login.designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MedicationStatus.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MedicationStatus.Designer.cs">
+      <DependentUpon>MedicationStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NurseMDI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NurseMDI.Designer.cs">
+      <DependentUpon>NurseMDI.cs</DependentUpon>
     </Compile>
     <Compile Include="PatientStatus.cs">
       <SubType>UserControl</SubType>
@@ -132,6 +156,12 @@
     <Compile Include="StatReport.Designer.cs">
       <DependentUpon>StatReport.cs</DependentUpon>
     </Compile>
+    <Compile Include="UpdatePatientStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdatePatientStatus.Designer.cs">
+      <DependentUpon>UpdatePatientStatus.cs</DependentUpon>
+    </Compile>
     <Compile Include="view_patient_info.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -146,6 +176,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AdminMDI.resx">
       <DependentUpon>AdminMDI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckStatus.resx">
+      <DependentUpon>CheckStatus.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DeleteEmployee.resx">
       <DependentUpon>DeleteEmployee.cs</DependentUpon>
@@ -168,8 +201,17 @@
     <EmbeddedResource Include="EmployeeRating.resx">
       <DependentUpon>EmployeeRating.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GenerateMedicalReport.resx">
+      <DependentUpon>GenerateMedicalReport.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicationStatus.resx">
+      <DependentUpon>MedicationStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NurseMDI.resx">
+      <DependentUpon>NurseMDI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PatientStatus.resx">
       <DependentUpon>PatientStatus.cs</DependentUpon>
@@ -188,6 +230,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="StatReport.resx">
       <DependentUpon>StatReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdatePatientStatus.resx">
+      <DependentUpon>UpdatePatientStatus.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="view_patient_info.resx">
       <DependentUpon>view_patient_info.cs</DependentUpon>
