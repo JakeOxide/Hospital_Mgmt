@@ -1,0 +1,82 @@
+-- Functions
+
+-- Report on Single entity
+
+GO
+CREATE FUNCTION [Get_Entity_Data]
+(@EntityID int)
+RETURNS TABLE
+AS
+	RETURN (SELECT * FROM Admins WHERE AdminIdNumber = @EntityID);
+
+
+GO
+CREATE DATABASE dbb
+
+GO
+USE dbb
+
+CREATE TABLE test(
+  ID int ,
+  Name varchar(30),
+  LR int,
+  salary money,
+  rating int
+  )
+
+insert into test values (101,'sami',2,5500,52)
+insert into test values (102,'helen',0,8500,79)
+insert into test values (103,'yoni',8,5900,58)
+insert into test values (104,'samrawit',7,9500,82)
+insert into test values (105,'Ella',3,22000,60)
+insert into test values (201,'aaaa',6,6200,51)
+insert into test values (202,'bbbb',0,9900,74)
+insert into test values (203,'cccc',1,3200,59)
+insert into test values (204,'dddd',9,1245,38)
+insert into test values (205,'eeee',4,7844,40)
+insert into test values (301,'ffff',2,8897,35)
+insert into test values (302,'gggg',0,4144,70)
+insert into test values (303,'hhhh',5,9733,65)
+insert into test values (304,'iiii',7,2020,88)
+insert into test values (305,'jjjj',3,1769,90)
+
+SELECT * FROM test
+
+GO
+CREATE FUNCTION [sort_by_salary](@howmany int)
+RETURNS TABLE
+AS 
+RETURN
+	(
+		SELECT TOP (@howmany) ID, Name, salary
+		FROM test 
+		ORDER BY salary DESC
+	)
+
+GO
+CREATE FUNCTION [sort_by_rating](@howmany int)
+RETURNS TABLE
+AS 
+RETURN
+	(
+		SELECT TOP (@howmany) Name, rating
+		FROM test 
+		ORDER BY rating DESC
+	)
+
+GO
+CREATE FUNCTION [sort_by_LR](@howmany int)
+RETURNS TABLE
+AS
+RETURN
+	(
+		SELECT TOP (@howmany) Name, LR
+		FROM test 
+		ORDER BY LR DESC
+	)
+
+
+GO
+SELECT * FROM dbo.sort_by_salary(5)
+SELECT * FROM dbo.sort_by_LR(6)
+SELECT * FROM dbo.sort_by_rating(5)

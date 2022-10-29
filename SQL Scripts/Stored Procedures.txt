@@ -1,0 +1,130 @@
+-- Stored Procedures
+
+
+--1 Calculate and insert entity age
+
+GO
+CREATE PROC [Calculate_Doc_Age]
+@did int
+AS
+BEGIN
+DECLARE @Age int;
+  DECLARE @givenDate date = (SELECT DBday FROM Doctors WHERE DIdNumber = @did);
+  IF(YEAR(@givenDate) < YEAR(GETDATE()))
+  BEGIN
+    IF(MONTH(@givenDate) >= MONTH(GETDATE()))
+    BEGIN
+      IF(DAY(@givenDate) >= DAY(GETDATE()))
+      BEGIN
+        SET @Age = (DATEDIFF(YEAR, @givenDate, GETDATE()) + 1)
+        UPDATE Doctors 
+        SET DAge = @Age
+        WHERE DIdNumber = @did
+      END
+      ELSE
+      BEGIN
+        SET @Age = (DATEDIFF(YEAR, @givenDate, GETDATE()))
+        UPDATE Doctors 
+        SET DAge = @Age
+        WHERE DIdNumber = @did
+      END
+    END
+    ELSE
+    BEGIN
+      SET @Age = DATEDIFF(YEAR, @givenDate, GETDATE());
+      UPDATE Doctors 
+      SET DAge = @Age
+      WHERE DIdNumber = @did
+    END
+  END
+END
+
+
+-- 2 Update Entity Salary
+
+GO
+CREATE PROC [Update_Entity_Salary]
+@EntityID int, @Dir int, @Amount Money
+AS
+BEGIN
+  IF(@Dir = 1)
+  BEGIN
+    UPDATE Doctors
+    SET DSalary = (DSalary + @Amount)
+    WHERE DIdNumber = @EntityID
+  END
+  ELSE IF(@Dir = 0)
+  BEGIN
+    UPDATE Doctors
+    SET DSalary = (DSalary - @Amount)
+    WHERE DIdNumber = @EntityID
+  END
+END
+
+
+
+-- 3 Update Entity Rating
+
+GO
+CREATE PROC [Update_Entity_Rating]
+@EntityID int, @Dir int, @Amount tinyint
+AS
+BEGIN
+  IF(@Dir = 1)
+  BEGIN
+    UPDATE Doctors
+    SET DRating = (DRating + @Amount)
+    WHERE DIdNumber = @EntityID
+  END
+  ELSE IF(@Dir = 0)
+  BEGIN
+    UPDATE Doctors
+    SET DRating = (DRating - @Amount)
+    WHERE DIdNumber = @EntityID
+  END
+END
+
+
+
+-- 4 Update Entity LeaveRecord
+
+GO
+CREATE PROC [Update_Entity_LeaveRecord]
+@EntityID int, @Dir int, @Amount int
+AS
+BEGIN
+  IF(@Dir = 1)
+  BEGIN
+    UPDATE Doctors
+    SET DLeaveRecord = (DLeaveRecord + @Amount)
+    WHERE DIdNumber = @EntityID
+  END
+  ELSE IF(@Dir = 0)
+  BEGIN
+    UPDATE Doctors
+    SET DLeaveRecord = (DLeaveRecord - @Amount)
+    WHERE DIdNumber = @EntityID
+  END
+END
+
+
+
+-- 5 Check Name Format Proc
+
+GO
+CREATE PROC [PROC_Update_Name_Format] 
+@EntityID int
+AS
+BEGIN
+  DECLARE @GivenFName varchar(100), @GivenLName varchar(100)
+  SET @GivenFName = (SELECT DFName FROM Doctors WHERE DIdNumber = @EntityID);
+  SET @GivenLName = (SELECT DLName FROM Doctors WHERE DIdNumber = @EntityID);
+  DECLARE @FNLen tinyint = (LEN(@GivenFName) - 1);
+  DECLARE @LNLen tinyint = (LEN(@GivenLName) - 1);
+  UPDATE Doctors
+  SET DFName = CONCAT (UPPER(SUBSTRING(@GivenFName, 1, 1)), LOWER(SUBSTRING(@GivenFName, 2, @FNLen)))
+  WHERE DIdNumber = @EntityID;
+  UPDATE Doctors
+  SET DLName = CONCAT (UPPER(SUBSTRING(@GivenLName, 1, 1)), LOWER(SUBSTRING(@GivenLName, 2, @LNLen)))
+  WHERE DIdNumber = @EntityID;
+END
