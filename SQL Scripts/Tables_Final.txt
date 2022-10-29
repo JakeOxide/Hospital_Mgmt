@@ -1,0 +1,67 @@
+-- Final Tables
+
+GO
+CREATE TABLE Doctors (
+  DRollNumber int IDENTITY(1, 1),
+  DIdNumber int PRIMARY KEY NOT NULL,
+  DFName varchar(100) NOT NULL,
+  DLName varchar(100) NOT NULL,
+  DGender varchar(6) NOT NULL,
+  DBday date NOT NULL,
+  DAge int,
+  DAddress varchar(100) NOT NULL,
+  DSpecialty varchar(100) NOT NULL,
+  DSalary Money NOT NULL,
+  DRating tinyint,
+  DLeaveRecord tinyint
+  );
+
+GO
+CREATE TABLE Nurses (
+  NRollNumber int IDENTITY(1, 1),
+  NIdNumber int PRIMARY KEY NOT NULL,
+  NFName varchar(100) NOT NULL,
+  NLName varchar(100) NOT NULL,
+  NGender varchar(6) NOT NULL,
+  NBday date NOT NULL,
+  NAge int,
+  NAddress varchar(100) NOT NULL,
+  NSpecialty varchar(100) NOT NULL,
+  NSalary Money NOT NULL,
+  NRating tinyint,
+  NLeaveRecord tinyint
+  );
+
+GO
+CREATE TABLE Admins (
+  AdminRollNumber int IDENTITY(1, 1),
+  AdminIdNumber int PRIMARY KEY NOT NULL,
+  AdminFName varchar(100) NOT NULL,
+  AdminLName varchar(100) NOT NULL,
+  AdminGender varchar(6) NOT NULL,
+  AdminBday date NOT NULL,
+  AdminAge int,
+  AdminAddress varchar(100) NOT NULL,
+  AdminSalary Money NOT NULL,
+  AdminRating tinyint,
+  AdminLeaveRecord tinyint
+  );
+
+GO
+CREATE TABLE Patient_Personal (
+  Pat_RollNumber int IDENTITY(1, 1),
+  Pat_IdNumber int PRIMARY KEY NOT NULL,
+  Pat_FName varchar(100) NOT NULL,
+  Pat_LName varchar(100) NOT NULL,
+  Pat_Gender varchar(6) NOT NULL,
+  Pat_Bday date NOT NULL,
+  Pat_Age int,
+  Pat_Address varchar(100) NOT NULL,
+  );
+
+GO
+CREATE TABLE Patient_Medical (
+  Pat_IdNumber int PRIMARY KEY NOT NULL,
+  Pat_Medication varchar(500) NOT NULL,
+  Pat_Status varchar(100) NOT NULL,
+  );
