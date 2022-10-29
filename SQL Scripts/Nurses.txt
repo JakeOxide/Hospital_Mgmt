@@ -1,0 +1,190 @@
+GO
+CREATE DATABASE CSharp4;
+
+GO
+USE CSharp4;
+
+GO
+CREATE TABLE Nurses (
+  NRollNumber int IDENTITY(1, 1),
+  NIdNumber int PRIMARY KEY NOT NULL,
+  NFName varchar(100) NOT NULL,
+  NLName varchar(100) NOT NULL,
+  NGender varchar(6) NOT NULL,
+  NBday date NOT NULL,
+  NAge int,
+  NAddress varchar(100) NOT NULL,
+  NSpecialty varchar(100) NOT NULL,
+  NSalary Money NOT NULL,
+  NRating tinyint,
+  NLeaveRecord tinyint
+  );
+
+--1 Calculate and insert Nurse age
+
+GO
+CREATE PROC [Calculate_Nurse_Age]
+@nid int
+AS
+BEGIN
+DECLARE @Age int;
+  DECLARE @givenDate date = (SELECT NBday FROM Nurses WHERE NIdNumber = @nid);
+  IF(YEAR(@givenDate) < YEAR(GETDATE()))
+  BEGIN
+    IF(MONTH(@givenDate) >= MONTH(GETDATE()))
+    BEGIN
+      IF(DAY(@givenDate) >= DAY(GETDATE()))
+      BEGIN
+        SET @Age = (DATEDIFF(YEAR, @givenDate, GETDATE()) + 1)
+        UPDATE Nurses 
+        SET NAge = @Age
+        WHERE NIdNumber = @nid
+      END
+      ELSE
+      BEGIN
+        SET @Age = (DATEDIFF(YEAR, @givenDate, GETDATE()))
+        UPDATE Nurses 
+        SET NAge = @Age
+        WHERE NIdNumber = @nid
+      END
+    END
+    ELSE
+    BEGIN
+      SET @Age = DATEDIFF(YEAR, @givenDate, GETDATE());
+      UPDATE Nurses 
+      SET NAge = @Age
+      WHERE NIdNumber = @nid
+    END
+  END
+END
+
+drop PROC Calculate_Nur_Age
+
+SELECT * FROM Nurses
+
+UPDATE Nurses
+SET NBday = '10/12/2000'
+WHERE NIdNumber = 2262104
+
+GO
+EXEC [Calculate_Doc_Age] 2262104
+
+-- 2 Update Nurse Salary
+
+GO
+ALTER PROC [Update_Nurse_Salary]
+@NIdNumber int, @Dir int, @Amount Money
+AS
+BEGIN
+  IF(@Dir = 1)
+  BEGIN
+    UPDATE Nurses
+    SET NSalary = (NSalary + @Amount)
+    WHERE NIdNumber = @NIdNumber
+  END
+  ELSE IF(@Dir = 0)
+  BEGIN
+    UPDATE Nurses
+    SET NSalary = (NSalary - @Amount)
+    WHERE NIdNumber = @NIdNumber
+  END
+END
+
+GO
+INSERT INTO Nurses VALUES (258, 'verOnica', 'thOmAs', 'Female', '10/15/1997', null, 'Ad1029', 'General DOC', 15225, 55, 0); 
+SELECT * from Nurses
+UPDATE Nurses
+SET NFName = 'verOnica'
+WHERE NIdNumber = 258;
+
+UPDATE Nurses
+SET NLName = 'thOmAs'
+WHERE NIdNumber = 258;
+
+EXEC [Calculate_Nur_Age] 258;
+
+SELECT * FROM Nurses;
+
+EXEC [Update_Nurse_Salary] 258, 1, 775;
+
+
+-- 3 Update Nurse Rating
+
+GO
+ALTER PROC [Update_Nurse_Rating]
+@NIdNumber int, @Dir int, @Amount tinyint
+AS
+BEGIN
+  IF(@Dir = 1)
+  BEGIN
+    UPDATE Nurses
+    SET NRating = (NRating + @Amount)
+    WHERE NIdNumber = @NIdNumber
+  END
+  ELSE IF(@Dir = 0)
+  BEGIN
+    UPDATE Nurses
+    SET NRating = (NRating - @Amount)
+    WHERE NIdNumber = @NIdNumber
+  END
+END
+
+EXEC [Calculate_Nur_Age] 55966;
+
+SELECT * FROM Nurses;
+
+EXEC [Update_Nurse_Rating] 258, 1, 25;
+
+
+-- 4 Update Nurse LeaveRecord
+
+GO
+ALTER PROC [Update_Nurse_LeaveRecord]
+@NIdNumber int, @Dir int, @Amount int
+AS
+BEGIN
+  IF(@Dir = 1)
+  BEGIN
+    UPDATE Nurses
+    SET NLeaveRecord = (NLeaveRecord + @Amount)
+    WHERE NIdNumber = @NIdNumber
+  END
+  ELSE IF(@Dir = 0)
+  BEGIN
+    UPDATE Nurses
+    SET NLeaveRecord = (NLeaveRecord - @Amount)
+    WHERE NIdNumber = @NIdNumber
+  END
+END
+
+SELECT * FROM Nurses
+
+EXEC [Update_Entity_LeaveRecord] 258, 0, 40;
+
+-- 5 Check Name Format Proc
+
+GO
+ALTER PROC [PROC_Update_Name_Format] 
+@NIdNumber int
+AS
+BEGIN
+  DECLARE @GivenFName varchar(100), @GivenLName varchar(100)
+  SET @GivenFName = (SELECT NFName FROM Nurses WHERE NIdNumber = @NIdNumber);
+  SET @GivenLName = (SELECT NLName FROM Nurses WHERE NIdNumber = @NIdNumber);
+  DECLARE @FNLen tinyint = (LEN(@GivenFName) - 1);
+  DECLARE @LNLen tinyint = (LEN(@GivenLName) - 1);
+  UPDATE Nurses
+  SET NFName = CONCAT (UPPER(SUBSTRING(@GivenFName, 1, 1)), LOWER(SUBSTRING(@GivenFName, 2, @FNLen)))
+  WHERE NIdNumber = @NIdNumber;
+  UPDATE Nurses
+  SET NLName = CONCAT (UPPER(SUBSTRING(@GivenLName, 1, 1)), LOWER(SUBSTRING(@GivenLName, 2, @LNLen)))
+			 
+  WHERE NIdNumber = @NIdNumber;
+END
+
+EXEC [PROC_Update_Name_Format] 258
+
+SELECT * FROM Nurses
+
+----------------------------------------------------------------------------------------------------
+
