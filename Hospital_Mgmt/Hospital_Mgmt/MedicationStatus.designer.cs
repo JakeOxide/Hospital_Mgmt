@@ -64,7 +64,7 @@
             this.lbl_address.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_address.Location = new System.Drawing.Point(18, 222);
             this.lbl_address.Name = "lbl_address";
-            this.lbl_address.Size = new System.Drawing.Size(79, 25);
+            this.lbl_address.Size = new System.Drawing.Size(63, 20);
             this.lbl_address.TabIndex = 1;
             this.lbl_address.Text = "Address";
             // 
@@ -142,7 +142,7 @@
             this.lbl_recommendation.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_recommendation.Location = new System.Drawing.Point(18, 361);
             this.lbl_recommendation.Name = "lbl_recommendation";
-            this.lbl_recommendation.Size = new System.Drawing.Size(161, 25);
+            this.lbl_recommendation.Size = new System.Drawing.Size(129, 20);
             this.lbl_recommendation.TabIndex = 9;
             this.lbl_recommendation.Text = "Recommendation";
             // 
@@ -162,7 +162,7 @@
             this.lbl_patient_name.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_patient_name.Location = new System.Drawing.Point(18, 171);
             this.lbl_patient_name.Name = "lbl_patient_name";
-            this.lbl_patient_name.Size = new System.Drawing.Size(128, 25);
+            this.lbl_patient_name.Size = new System.Drawing.Size(102, 20);
             this.lbl_patient_name.TabIndex = 7;
             this.lbl_patient_name.Text = "Patient Name";
             // 
@@ -235,7 +235,6 @@
             this.Controls.Add(this.lbl_treatment);
             this.Controls.Add(this.lbl_address);
             this.Controls.Add(this.lbl_patient_ID);
-            this.Enabled = false;
             this.Name = "MedicationStatus";
             this.Size = new System.Drawing.Size(707, 531);
             this.Load += new System.EventHandler(this.MedicationStatus_Load);

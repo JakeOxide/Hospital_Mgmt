@@ -64,7 +64,7 @@ namespace Hospital_Mgmt
 
         private void issueMedicalCertificateToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            /*GenerateMedicalReport obj = new GenerateMedicalReport();
+            GenerateMedicalReport obj = new GenerateMedicalReport();
             var thisForm = ActiveMdiChild;
             if (thisForm != null)
             {
@@ -72,7 +72,6 @@ namespace Hospital_Mgmt
             }
             obj.MdiParent = this;
             obj.Show();
-            */
         }
     }
 }
