@@ -10,22 +10,11 @@ using System.Windows.Forms;
 
 namespace Hospital_Mgmt
 {
-    public partial class GenerateMedicalReport : Form
+    public partial class temp : Form
     {
-        public GenerateMedicalReport()
+        public temp()
         {
             InitializeComponent();
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void GenerateMedicalReport_Load(object sender, EventArgs e)
-        {
-            
-            
         }
     }
 }

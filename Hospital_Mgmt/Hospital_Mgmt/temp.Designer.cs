@@ -1,6 +1,6 @@
 ﻿namespace Hospital_Mgmt
 {
-    partial class GenerateMedicalReport
+    partial class temp
     {
         /// <summary>
         /// Required designer variable.
@@ -30,15 +30,13 @@
         {
             this.SuspendLayout();
             // 
-            // GenerateMedicalReport
+            // temp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1138, 934);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "GenerateMedicalReport";
-            this.Text = "GenerateMedicalReport";
-            this.Load += new System.EventHandler(this.GenerateMedicalReport_Load);
+            this.ClientSize = new System.Drawing.Size(1165, 755);
+            this.Name = "temp";
+            this.Text = "temp";
             this.ResumeLayout(false);
 
         }

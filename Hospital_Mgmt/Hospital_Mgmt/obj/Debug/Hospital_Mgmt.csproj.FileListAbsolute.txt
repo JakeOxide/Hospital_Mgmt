@@ -70,3 +70,4 @@ C:\Users\Abel\Documents\GitHub\Hospital_Mgmt\Hospital_Mgmt\Hospital_Mgmt\obj\Deb
 C:\Users\Abel\Documents\GitHub\Hospital_Mgmt\Hospital_Mgmt\Hospital_Mgmt\obj\Debug\Hospital_Mgmt.MedicationStatus.resources
 C:\Users\Abel\Documents\GitHub\Hospital_Mgmt\Hospital_Mgmt\Hospital_Mgmt\obj\Debug\Hospital_Mgmt.NurseMDI.resources
 C:\Users\Abel\Documents\GitHub\Hospital_Mgmt\Hospital_Mgmt\Hospital_Mgmt\obj\Debug\Hospital_Mgmt.UpdatePatientStatus.resources
+C:\Users\Abel\Documents\GitHub\Hospital_Mgmt\Hospital_Mgmt\Hospital_Mgmt\obj\Debug\Hospital_Mgmt.temp.resources

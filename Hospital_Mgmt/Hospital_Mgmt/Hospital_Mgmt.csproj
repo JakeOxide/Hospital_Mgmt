@@ -156,6 +156,12 @@
     <Compile Include="StatReport.Designer.cs">
       <DependentUpon>StatReport.cs</DependentUpon>
     </Compile>
+    <Compile Include="temp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="temp.Designer.cs">
+      <DependentUpon>temp.cs</DependentUpon>
+    </Compile>
     <Compile Include="UpdatePatientStatus.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -230,6 +236,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="StatReport.resx">
       <DependentUpon>StatReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="temp.resx">
+      <DependentUpon>temp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UpdatePatientStatus.resx">
       <DependentUpon>UpdatePatientStatus.cs</DependentUpon>

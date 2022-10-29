@@ -61,5 +61,18 @@ namespace Hospital_Mgmt
             obj.MdiParent = this;
             obj.Show();
         }
+
+        private void issueMedicalCertificateToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            /*GenerateMedicalReport obj = new GenerateMedicalReport();
+            var thisForm = ActiveMdiChild;
+            if (thisForm != null)
+            {
+                thisForm.Close();
+            }
+            obj.MdiParent = this;
+            obj.Show();
+            */
+        }
     }
 }

@@ -52,7 +52,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(744, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(744, 30);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -92,7 +92,7 @@
             this.issuePrescriptionToolStripMenuItem,
             this.issueMedicalCertificateToolStripMenuItem});
             this.medicalDataToolStripMenuItem.Name = "medicalDataToolStripMenuItem";
-            this.medicalDataToolStripMenuItem.Size = new System.Drawing.Size(112, 24);
+            this.medicalDataToolStripMenuItem.Size = new System.Drawing.Size(112, 26);
             this.medicalDataToolStripMenuItem.Text = "Medical Data";
             // 
             // issuePrescriptionToolStripMenuItem
@@ -107,6 +107,7 @@
             this.issueMedicalCertificateToolStripMenuItem.Name = "issueMedicalCertificateToolStripMenuItem";
             this.issueMedicalCertificateToolStripMenuItem.Size = new System.Drawing.Size(258, 26);
             this.issueMedicalCertificateToolStripMenuItem.Text = "Generate Medical Report";
+            this.issueMedicalCertificateToolStripMenuItem.Click += new System.EventHandler(this.issueMedicalCertificateToolStripMenuItem_Click);
             // 
             // accountToolStripMenuItem
             // 

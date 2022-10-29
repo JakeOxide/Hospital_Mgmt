@@ -32,7 +32,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.label8 = new System.Windows.Forms.Label();
+            this.lbl_patient_ID = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -69,7 +69,7 @@
             this.panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.button1);
-            this.panel2.Controls.Add(this.label8);
+            this.panel2.Controls.Add(this.lbl_patient_ID);
             this.panel2.Controls.Add(this.tableLayoutPanel1);
             this.panel2.Controls.Add(this.lbl_patient_name);
             this.panel2.Controls.Add(this.btn_search);
@@ -100,16 +100,16 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // label8
+            // lbl_patient_ID
             // 
-            this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(338, 56);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(115, 31);
-            this.label8.TabIndex = 4;
-            this.label8.Text = "Patient ID";
+            this.lbl_patient_ID.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_patient_ID.AutoSize = true;
+            this.lbl_patient_ID.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_patient_ID.Location = new System.Drawing.Point(338, 56);
+            this.lbl_patient_ID.Name = "lbl_patient_ID";
+            this.lbl_patient_ID.Size = new System.Drawing.Size(115, 31);
+            this.lbl_patient_ID.TabIndex = 4;
+            this.lbl_patient_ID.Text = "Patient ID";
             // 
             // tableLayoutPanel1
             // 
@@ -338,7 +338,7 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label lbl_patient_ID;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
